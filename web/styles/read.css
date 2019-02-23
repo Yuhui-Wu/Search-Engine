@@ -1,0 +1,158 @@
+/* pdf viewer */
+.iframe1 {
+    position: absolute;
+    width: 100%;
+    height: -webkit-fill-available;
+}
+
+/* header title(name of article) */
+.title {
+    font-family: 'Spectral SC',sans-serif;
+    font-size: 2vh;
+    color: whitesmoke;
+    text-align: center;
+}
+
+/* header + viewer */
+.container {
+    max-width: 100%;
+    margin: auto;
+}
+
+.headbar {
+    background-color:forestgreen;
+}
+
+.titlebar {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;    
+}
+
+#slide-menu {
+  position: fixed;
+  top: 0;
+  right: -100px;
+  bottom: 0;
+  display: block;
+  float: left;
+  width: 100%;
+  max-width: 40%;
+  height: 100%;
+  -moz-transition: all 300ms;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+
+body.menu-active nav#slide-menu {
+  right: 0px;
+}
+
+/*
+  Content
+*/
+div#content {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width:100%;
+  height: 100%;
+  padding:0;
+  background: #fcfeff;
+  border-radius: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-shadow: -3px 0 6px #4a5562;
+  -webkit-box-shadow: -3px 0 6px #4a5562;
+  box-shadow: -3px 0 6px #4a5562;
+  -moz-transition: all 300ms;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+div#content div.menu-trigger{
+  position: fixed;
+  top: 10px;
+  right: 40px;
+  width: 34px;
+  height: 34px;
+  background:ghostwhite;
+  cursor: pointer;
+  border-radius: 20px;
+  -moz-transition: all 300ms;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.back-trigger{
+  position: fixed;
+  top: 10px;
+  left: 40px;
+  width: 34px;
+  height: 34px;
+  background:ghostwhite;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.material-icons {
+    font-size: 20px;
+    margin: auto;
+    padding: 7px;
+    color:dimgray;
+}
+
+.material-icons:hover {
+    color:whitesmoke;
+}
+
+.back-trigger:hover {
+    background:#4a5562;
+}
+div#content div.menu-trigger:hover {
+  background:#4a5562;
+}
+
+body.menu-active div#content {
+  right: 40%;
+  width: 60%;
+}
+
+body.menu-active div#content .menu-trigger {
+  right: 41%;
+}
+
+
+/*
+search bar
+*/
+
+/*.search {
+  padding-top:2%;
+  padding-bottom: 5%
+}*/
+.search input {
+  width: 100%;
+  border-bottom:2px solid #ccc;
+  border-left: 0px;
+  border-top:0px;
+  border-right:0px;
+  padding: 8px;
+  margin: 5px;
+  font-size: 1rem;
+  -webkit-transition: width 0.2s;
+  transition: width 0.2s;
+  -webkit-appearance: none;
+}
+
+.loadmore {
+    font-size: 30px;
+    margin: auto;
+    background-color: white;
+    color:grey;
+    border: 0px; /* Green */
+}
+.loadmore:hover {
+    color:#4a5562;
+}

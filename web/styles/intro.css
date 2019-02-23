@@ -1,0 +1,131 @@
+body {
+    font-family: 'Spectral SC',sans-serif;
+}
+
+h1 {
+    font-family: 'Poiret One', cursive;
+    font-size: 4vw;
+    color:#FFFFFF;
+    margin: 0;
+    varter-spacing: 1vw;
+}
+
+h3 {
+    font-family: 'Poiret One', cursive;
+    margin: 0;
+    font-size: 2.5vw;
+    color:#FFFFFF;
+    opacity: 0.9;
+}
+
+a {
+    text-decoration: none;
+}
+
+#tab-about {
+    background:url("../image/Forests.jpg");
+    background-size: cover;
+    height: 60vw;
+}
+
+#tab-ins {
+    background:url("../image/intro.jpg");
+    background-size: cover;
+    height: 55vw;
+}
+
+#tab-con {
+    background:url("../image/contact.jpg");
+    background-size: cover;
+    height: 34vw;
+}
+
+.contact-us {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction:row;
+}
+.con {
+    padding-top: 6vw;
+    font-family:serif;
+    font-size: 1.5vw;
+    color: white;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs,.slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    background: #eee;
+    text-align: center;
+    padding:0;
+
+}
+
+.tabs-container {
+    top:0;
+    display: flex;
+    flex-direction:row;
+    position: absolute;
+    bottom: 0;
+    width: 99.2%;
+    height: 70px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    z-index: 10;
+}
+.tabs-container--top {
+    position: fixed;
+    top: 0;
+ }
+
+.tab-head {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0.55;
+    color: #666666;
+    varter-spacing: 0.2vw;
+    transition: all 0.5s ease;
+
+}
+
+.tab-head:hover {
+    color: #3DA152;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:0.09;
+    color: #666666;
+    varter-spacing: 0.05rem;
+    transition: all 0.5s ease;
+    font-size: 1vw;
+}
+
+.tab:hover {
+     color:white;
+     background:#3DA152;
+     transition: all 0.5s ease;
+ }
+
+
+.tab-slider {
+    position: absolute;
+    bottom: 0;
+    height: 5px;
+    background: #3DA152;
+    transition: left 0.3s ease;
+}
+
+
+
